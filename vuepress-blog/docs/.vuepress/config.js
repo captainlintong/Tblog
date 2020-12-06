@@ -10,7 +10,9 @@ module.exports = {
     nav:[ // 导航栏配置
       {text: '首页', link: '/' },
       {text: '技术文档', link: '/tech/' },
-      {text: '我的', link: '/wenxue/'}
+      {text: '文章', link: '/wenxue/'},
+
+      {text: 'github', link: 'https://github.com/captainlintong'}
     ],
     sidebar:  {
       '/tech/': [
@@ -20,9 +22,16 @@ module.exports = {
         'react',
         'java'
       ],
-      '/wenxue/': [
-        '',
-        'my.md'
+      '/wenxue/': [  {
+          title: '文学',   // 必要的
+          path: '/wenxue/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          collapsable: true, // 可选的, 默认值是 true,
+          sidebarDepth: 1,    // 可选的, 默认值是 1
+          children: [
+            '/wenxue/',
+            'my.md'
+          ]
+        }
       ]
     }, // 侧边栏配置
     sidebarDepth: 2,
