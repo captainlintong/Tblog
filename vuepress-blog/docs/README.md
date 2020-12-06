@@ -1,16 +1,16 @@
 ---
 home: true
-heroImage: /t.png
+heroImage: /logo2.png
 heroText: 我的博客
-tagline: It is My Blog !
+tagline: 前端小学生
 actionText: 我的文档 →
 actionLink: /tech/
 features:
-- title: html
+- title: 工作
   details: 。。。
-- title: css
+- title: 生活
   details: 。。。
-- title: javascript
+- title: 不仅仅是工作和生活
   details: 。。。
 footer: 林通的个人博客
 ---

@@ -10,9 +10,21 @@ module.exports = {
     nav:[ // 导航栏配置
       {text: '首页', link: '/' },
       {text: '技术文档', link: '/tech/' },
-      {text: 'mpaas', link: 'https://tech.antfin.com/docs/2/49549'}
+      {text: '我的', link: '/wenxue/'}
     ],
-    sidebar: 'auto', // 侧边栏配置
+    sidebar:  {
+      '/tech/': [
+        '',
+        'vue',
+        'ts',
+        'react',
+        'java'
+      ],
+      '/wenxue/': [
+        '',
+        'my.md'
+      ]
+    }, // 侧边栏配置
     sidebarDepth: 2,
     serviceWorker: true // 是否开启 PWA
   }
