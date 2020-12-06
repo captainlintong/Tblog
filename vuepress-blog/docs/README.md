@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /T.png
+heroImage: /t.png
 heroText: 我的博客
 tagline: It is My Blog !
 actionText: 我的文档 →
