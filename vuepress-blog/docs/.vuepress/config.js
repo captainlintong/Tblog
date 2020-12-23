@@ -9,26 +9,47 @@ module.exports = {
     logo: '/t.png',  // 左上角logo
     nav:[ // 导航栏配置
       {text: '首页', link: '/' },
-      {text: '技术文档', link: '/tech/' },
-      {text: '文章', link: '/wenxue/'},
-
+      {text: '技术文档', link: '/document/' },
+      {text: '文章', link: '/article/'},
       {text: 'github', link: 'https://github.com/captainlintong'}
     ],
     sidebar:  {
-      '/tech/': [
-        '',
-        'vue',
-        'ts',
-        'react',
-        'java'
+      // '/document/': [
+      //   '',
+      //   'vue',
+      //   'ts',
+      //   'react',
+      //   'java'
+      // ],
+      '/document/': [{
+        title: '前端', // 必要的
+        path: '/document/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 2, // 可选的, 默认值是 1
+        children: [
+          '/document/',
+          'vue',
+          'ts',
+          'react',
+          'java'
+        ]},
+        {
+          title: 'http的起源与发展', // 必要的
+          path: '/document/http/', // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          collapsable: true, // 可选的, 默认值是 true,
+          sidebarDepth: 2, // 可选的, 默认值是 1
+          children: [
+            '/document/http/',
+            '/document/http/tcp.md'
+          ]}
       ],
-      '/wenxue/': [  {
+      '/article/': [{
           title: '文学',   // 必要的
-          path: '/wenxue/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          path: '/article/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 1,    // 可选的, 默认值是 1
           children: [
-            '/wenxue/',
+            '/article/',
             'my.md'
           ]
         }
