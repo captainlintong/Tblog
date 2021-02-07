@@ -51,7 +51,8 @@ module.exports = {
           sidebarDepth: 1,    // 可选的, 默认值是 1
           children: [
             '/article/',
-            'my.md'
+            'my.md',
+            'sanshi.md'
           ]
         }
       ]
