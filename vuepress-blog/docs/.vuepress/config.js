@@ -44,7 +44,7 @@ module.exports = {
           children: ["/document/http/", "/document/http/tcp.md"],
         },
         {
-          title: "面试题", // 必要的
+          title: "题", // 必要的
           path: "/document/work/", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 1, // 可选的, 默认值是 1
