@@ -1,10 +1,10 @@
 ---
 home: true
 heroImage: /logo2.png
-heroText: 我的博客
-tagline: 前端小学生
-actionText: 我的文档 →
-actionLink: /tech/
+heroText: 前端小学生的
+tagline: 个人博客
+actionText: 我 →
+actionLink: /article/sanshi.html
 features:
 - title: 工作
   details: 。。。
@@ -12,5 +12,5 @@ features:
   details: 。。。
 - title: 不仅仅是工作和生活
   details: 。。。
-footer: 林通的个人博客
+footer: 从前有一个人,他叫林通...
 ---
