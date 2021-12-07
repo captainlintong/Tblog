@@ -34,6 +34,23 @@ window.addEventListener("scroll", debounce(handle, 300));
 
 ```
 
+```javaScript
+function debounce (fun wait =0) {
+  let timerd = null
+  let res
+  return function () {
+    let context = this
+    let args = arguments
+    if (timerd) {
+      clearTimeout(timerd)
+    }
+    timerd = seeTimeout (functioin () {
+      result = fun.apply(context, args)
+    }, wait)
+  }
+}
+```
+
 
 
 
