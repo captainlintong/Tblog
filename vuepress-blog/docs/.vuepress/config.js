@@ -1,3 +1,26 @@
+const linuxChild = [
+"/document/linux/",
+"/document/linux/2.1Linux入门.md",
+"/document/linux/2.2Linux安装",
+"/document/linux/2.3Linux目录结构",
+"/document/linux/3.1远程登录Linux系统",
+"/document/linux/3.2vi和vim编辑器",
+"/document/linux/3.3关机、重启和用户登录注销",
+"/document/linux/3.4用户管理",
+"/document/linux/3.5实用指令",
+"/document/linux/3.6组管理和权限管理",
+"/document/linux/3.7定时任务调度",
+"/document/linux/3.8Linux磁盘分区、挂载度",
+"/document/linux/3.9网络配置",
+"/document/linux/3.10进程管理",
+"/document/linux/3.11包管理工具(RPM和YUM)"
+];
+
+// const fs = require('fs')
+// const dir = '/document/linux'
+// const files = fs.readdirSync(dir)
+// console.log('files', files);
+
 module.exports = {
   title: "林通的博客",
   head: [
@@ -64,13 +87,20 @@ module.exports = {
           sidebarDepth: 1, // 可选的, 默认值是 1
           children: ["/document/webrtc/"],
         },
-        // {
-        //   title: "pdf预览", // 必要的
-        //   path: "/document/pdf", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        //   collapsable: true, // 可选的, 默认值是 true,
-        //   sidebarDepth: 1, // 可选的, 默认值是 1
-        //   children: ["/document/pdf/"],
-        // },
+        {
+          title: "pdf预览", // 必要的
+          path: "/document/pdf", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          collapsable: true, // 可选的, 默认值是 true,
+          sidebarDepth: 1, // 可选的, 默认值是 1
+          children: ["/document/pdf/"],
+        },
+        {
+          title: "linux", // 必要的
+          path: "/document/linux", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          collapsable: true, // 可选的, 默认值是 true,
+          sidebarDepth: 1, // 可选的, 默认值是 1
+          children: linuxChild,
+        },
       ],
       "/article/": [
         {
@@ -78,7 +108,8 @@ module.exports = {
           path: "/article/", // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           collapsable: true, // 可选的, 默认值是 true,
           sidebarDepth: 1, // 可选的, 默认值是 1
-          children: ["/article/", "my.md", "sanshi.md"],
+          children: ["/article/", "my.md"],
+          // children: ["/article/", "my.md", "sanshi.md"],
         },
       ],
     }, // 侧边栏配置
